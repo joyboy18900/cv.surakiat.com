@@ -46,3 +46,13 @@ Images under `src/assets/` are resolved at build time via `getImagePath()` in `s
 ### Theme
 
 `ThemeStore` toggles dark mode by adding/removing the `dark` class on `<html>`. Default is dark mode unless `localStorage.theme` is explicitly set to `'light'`.
+
+## Package management
+
+This project uses **pnpm only** — `pnpm-lock.yaml` is the single source of truth. Do not run `npm install` or commit a `package-lock.json`; a stale one previously caused GitHub to report phantom Dependabot vulnerabilities for versions that were already patched in `pnpm-lock.yaml`.
+
+Transitive-dependency CVE fixes are pinned via `overrides` in `pnpm-workspace.yaml`. When a `pnpm audit` finding can't be resolved by bumping a direct dependency, add/update an override there rather than patching `node_modules` by hand.
+
+## Deployment
+
+Deployed via Netlify (`netlify.toml`): builds with `pnpm run build`, publishes `dist/`, targets Node 20, and rewrites all routes to `/index.html` for client-side routing.
