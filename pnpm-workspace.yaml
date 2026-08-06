@@ -2,11 +2,16 @@ allowBuilds:
   esbuild: true
   vue-demi: true
 overrides:
-  shell-quote: '>=1.8.4'
+  shell-quote: '>=1.8.5'
   'js-yaml@>=4.0.0': '>=4.1.2'
-  # CVE fixes — brace-expansion DoS (GHSA-3jxr-9vmj-r5cp, GHSA-mh99-v99m-4gvg, GHSA-rgw5-rvv9-x895)
   brace-expansion: '>=2.1.4'
-  # CVE fix — js-yaml DoS in v5.x (GHSA-pm4m-ph32-ghv5)
   js-yaml: '>=5.2.2'
-  # CVE fixes — postcss Path Traversal (GHSA-r28c-9q8g-f849, GHSA-fxqj-rqcc-2cmp)
-  postcss: '>=8.5.23'
+  postcss: '>=8.5.25'
+  lodash: '>=4.17.21'
+  flatted: '>=3.3.2'
+  minimatch: '>=9.0.5'
+  rollup: '>=4.22.4'
+  '@babel/core': '>=7.26.10'
+  picomatch: '>=2.3.1'
+  '@intlify/core-base': '>=9.14.5'
+  vue-i18n: '>=9.14.5'
