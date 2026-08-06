@@ -4,4 +4,9 @@ allowBuilds:
 overrides:
   shell-quote: '>=1.8.4'
   'js-yaml@>=4.0.0': '>=4.1.2'
-  'postcss@<8.5.10': '>=8.5.10'
+  # CVE fixes — brace-expansion DoS (GHSA-3jxr-9vmj-r5cp, GHSA-mh99-v99m-4gvg, GHSA-rgw5-rvv9-x895)
+  brace-expansion: '>=2.1.4'
+  # CVE fix — js-yaml DoS in v5.x (GHSA-pm4m-ph32-ghv5)
+  js-yaml: '>=5.2.2'
+  # CVE fixes — postcss Path Traversal (GHSA-r28c-9q8g-f849, GHSA-fxqj-rqcc-2cmp)
+  postcss: '>=8.5.23'
