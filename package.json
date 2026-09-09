@@ -14,7 +14,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.12",
     "@heroicons/vue": "^2.0.16",
-    "caniuse-lite": "^1.0.30001636",
+    "caniuse-lite": "^1.0.30001810",
     "vue-easy-lightbox": "^1.15.0",
     "vue-i18n": "^9.14.5",
     "vue-router": "^4.1.6"
